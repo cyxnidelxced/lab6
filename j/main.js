@@ -16,15 +16,13 @@ fetch("houses.json")
         data.forEach((house) => {
             let family = house.members.join(" | ");
 
-            // generate the html snippet for one array item
-            //to be added to the "html" temp holder.
-            let objInfo = `
-                <dl class="house-info">
-                    <dt class="house-name">${house.name}</dt>
+            //the semantic HTML with CSS class hooks for each house
+            html += `
+                <dl class="house-info"> 
+                    <dt class="house-name">${house.name}</dt>  
                     <dd class="house-members">${family}</dd>
                 </dl>
             `;
-            html += objInfo;
         });
 
         //make a reference to the html container where
