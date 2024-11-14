@@ -60,6 +60,13 @@ dd.house-members {
     margin: 0;
 }
 
+/* Hover Effect for House Info */
+dl.house-info:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.8); /* Enhanced shadow for hover */
+}
+
+
 
 
 
