@@ -42,5 +42,18 @@ dl.house-info {
     border-left: 10px solid #d4af37; /* Gold left border for emphasis */
 }
 
+/* House Names Styling */
+dt.house-name {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #d4af37; /* Gold to symbolize royalty */
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+
+
 
 
