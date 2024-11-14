@@ -1,3 +1,35 @@
+body {
+    font-family: 'Georgia', serif;  /* Serif font for a classic, medieval look */
+    background-color: #2f2f2f; /* Deep gray to evoke cold stone walls */
+    color: #f4f4f4; /* Light gray text for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://www.transparenttextures.com/patterns/stone-wall.png'); /* Stone texture for authenticity */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in-out; /* Smooth transition when changing background color */
+}
+
+/* Container Styles */
+#container {
+    width: 80%;
+    max-width: 1000px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for a dark, ancient look */
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* Shadow to create depth */
+    text-align: center;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    border: 5px solid #d4af37; /* Gold border for royal touch */
+}
 
 
 
