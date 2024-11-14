@@ -34,3 +34,17 @@ fetch("houses.json")
     })
     .catch((err) => console.log("Oops!", err));
     //this only runs if there is an error during the above process
+
+// Fetch a random color and change the background
+const fetchBackgroundColor = async () => {
+    try {
+        const response = await fetch('https://www.thecolorapi.com/random');
+        const data = await response.json();
+        const color = data.hex.value;
+        document.body.style.backgroundColor = color;
+    } catch (error) {
+        console.log('Error!', error);
+    }
+};
+
+window.onload = fetchBackgroundColor;
