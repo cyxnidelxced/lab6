@@ -7,11 +7,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start;
+    min-height: 100%;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     transition: background-color 0.5s ease-in-out; /* Smooth transition when changing background color */
 }
 
@@ -39,6 +40,8 @@ body {
     position: relative;
     z-index: 1;
     border: 5px solid #d4af37; /* Gold border for royal touch */
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* House Info Section Styling */
