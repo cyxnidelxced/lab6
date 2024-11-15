@@ -16,11 +16,13 @@ fetch("houses.json")
         data.forEach((house) => {
             let family = house.members.join(" | ");
 
-            // generate the html snippet for one array item
-            //to be added to the "html" temp holder.
-            let objInfo = `<p class="house">${house.name}</p>
-        <p class="folks">${family}</p>`;
-            html += objInfo;
+            //the semantic HTML with CSS class hooks for each house
+            html += `
+                <dl class="house-info"> 
+                    <dt class="house-name">${house.name}</dt>  
+                    <dd class="house-members">${family}</dd>
+                </dl>
+            `;
         });
 
         //make a reference to the html container where
@@ -30,3 +32,17 @@ fetch("houses.json")
     })
     .catch((err) => console.log("Oops!", err));
     //this only runs if there is an error during the above process
+
+// Fetch a random color and change the background
+const fetchBackgroundColor = async () => {
+    try {
+        const response = await fetch('https://www.thecolorapi.com/random');
+        const data = await response.json();
+        const color = data.hex.value;
+        document.body.style.backgroundColor = color;
+    } catch (error) {
+        console.log('Error!', error);
+    }
+};
+
+window.onload = fetchBackgroundColor;
